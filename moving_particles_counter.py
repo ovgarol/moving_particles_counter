@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2025 Helmholtz-Zentrum hereon GmbH
+# SPDX-License-Identifier: CC0-1.0
+# SPDX-FileContributor Ovidio Garcia-Oliva <ovidio.garcia@hereon.de>
+
 ## based on:
 ## https://www.educative.io/answers/background-subtraction-opencv
 ## https://www.geeksforgeeks.org/find-the-solidity-and-equivalent-diameter-of-an-image-object-using-opencv-python/
@@ -157,7 +161,6 @@ while True:
                 peri = cv2.arcLength(c, True)
                 approx = cv2.approxPolyDP(c, eps * peri, True)
                 cv2.drawContours(output_frame, [approx], -1, (0, 0, 0), 1)
-
 
     # Write the frame to the output video file
     output.write(output_frame) # overlayed
